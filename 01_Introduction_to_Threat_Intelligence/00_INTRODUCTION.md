@@ -7,35 +7,43 @@ Reference material on advanced threat intelligence: research, analysis, attribut
 ```mermaid
 flowchart TD
     ROOT[THREAT INTELLIGENCE]
-    F[FOUNDATIONS]
-    A[ANALYSIS]
-    D[DELIVERY]
-    T1[Threat actor landscape]
-    T1B[Threat modelling frameworks]
-    T1C[Legal, ethical &amp; policy<br/>considerations]
-    T2[Strategic analysis &amp;<br/>threat modelling]
-    T3[Threat research, correlation,<br/>infrastructure mapping]
-    T4[Reporting &amp; communication]
-    T5[End-to-end campaign analysis]
 
-    ROOT --> F --> T1
-    F --> T1B
-    F --> T1C
-    ROOT --> A --> T2
-    A --> T3
-    ROOT --> D --> T4
-    T4 --> T5
+    S1[Introduction to<br/>Threat Intelligence]
+    S2[Intelligence Collection<br/>&amp; Infrastructure]
+    S3[Strategic Analysis,<br/>Attribution &amp;<br/>Threat Modelling]
+    S4[Threat Research,<br/>Correlation &amp;<br/>Infrastructure Mapping]
+    S5[Reporting &amp;<br/>Communication]
+
+    A1[Threat actor landscape]
+    A2[Threat modelling frameworks]
+    A3[Legal, ethical &amp; policy]
+    B1[Intelligence collection<br/>methodologies]
+
+    ROOT --> S1 --> A1
+    S1 --> A2
+    S1 --> A3
+    ROOT --> S2 --> B1
+    ROOT --> S3
+    ROOT --> S4
+    ROOT --> S5
 ```
 
-| Topic | Reference |
-|-------|-----------|
-| Threat actor categories, motivations, attribution, confidence levels | [01_THREAT_ACTOR_LANDSCAPE.md](./01_THREAT_ACTOR_LANDSCAPE.md) |
-| Threat modelling frameworks (MITRE ATT&CK, Diamond, Cyber Kill Chain, STRIDE, PASTA) | [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md) |
-| Legal, ethical & policy considerations (GDPR, CCPA, OSINT ethics, NIST 800-53/61) | [03_LEGAL_ETHICAL_AND_POLICY.md](./03_LEGAL_ETHICAL_AND_POLICY.md) |
-| Strategic analysis & threat modelling (NIST 800-30, ACH) | *to be added* |
-| Threat research, correlation, infrastructure mapping (OSINT, malware analysis, behavioural fingerprinting) | *to be added* |
-| Reporting & communication | See [Ransomware Reporting Reference](#ransomware-reporting-reference) below |
-| End-to-end campaign analysis | *to be added* |
+### Introduction to Threat Intelligence
+
+- [Threat actor categories, motivations, attribution, confidence levels](./01_THREAT_ACTOR_LANDSCAPE.md)
+- [Threat modelling frameworks (MITRE ATT&CK, Diamond, Cyber Kill Chain, STRIDE, PASTA)](./02_THREAT_MODELLING_FRAMEWORKS.md)
+- [Legal, ethical & policy considerations (GDPR, CCPA, OSINT ethics, NIST 800-53/61)](./03_LEGAL_ETHICAL_AND_POLICY.md)
+
+### Intelligence Collection & Infrastructure
+
+- [Intelligence collection methodologies (OSINT, HUMINT, SIGINT, deep & dark web)](../02_Intelligence_Collection_and_Infrastructure/04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md)
+
+### To Be Added
+
+- Strategic analysis & threat modelling (NIST 800-30, ACH)
+- Threat research, correlation, infrastructure mapping (malware analysis, behavioural fingerprinting)
+- Reporting & communication — currently see [Ransomware Reporting Reference](#ransomware-reporting-reference) below
+- End-to-end campaign analysis
 
 ---
 
@@ -66,13 +74,14 @@ Most analysts operate at indicator collection or structured analysis. Strategic 
 |---------|------------------|
 | Malware & behaviour analysis | VirusTotal, AnyRun |
 | Infrastructure mapping | Shodan, PassiveDNS |
+| Link analysis | Maltego CE |
 | Structured analysis | MITRE ATT&CK, ACH (Analysis of Competing Hypotheses) |
 | Multidimensional intrusion analysis | Diamond Model |
 | Attack lifecycle tracking | Cyber Kill Chain |
 | Stakeholder-ready outputs | Reporting templates, modern reporting tools |
 | Ethical & legal guardrails | GDPR, CCPA, NIST 800-53, NIST 800-61 |
 
-For framework comparison and the Diamond Model in detail, see [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md).
+For framework comparison and the Diamond Model in detail, see [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md). For the OSINT/HUMINT/SIGINT collection toolkit in context, see [04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md](../02_Intelligence_Collection_and_Infrastructure/04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md).
 
 ---
 

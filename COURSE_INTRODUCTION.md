@@ -12,6 +12,7 @@ flowchart TD
     D[DELIVERY]
     T1[Threat actor landscape]
     T1B[Threat modelling frameworks]
+    T1C[Legal, ethical &amp; policy<br/>considerations]
     T2[Strategic analysis &amp;<br/>threat modelling]
     T3[Threat research, correlation,<br/>infrastructure mapping]
     T4[Reporting &amp; communication]
@@ -19,6 +20,7 @@ flowchart TD
 
     ROOT --> F --> T1
     F --> T1B
+    F --> T1C
     ROOT --> A --> T2
     A --> T3
     ROOT --> D --> T4
@@ -29,7 +31,7 @@ flowchart TD
 |-------|-----------|
 | Threat actor categories, motivations, attribution, confidence levels | [THREAT_ACTOR_LANDSCAPE.md](./THREAT_ACTOR_LANDSCAPE.md) |
 | Threat modelling frameworks (MITRE ATT&CK, Diamond, Cyber Kill Chain, STRIDE, PASTA) | [THREAT_MODELLING_FRAMEWORKS.md](./THREAT_MODELLING_FRAMEWORKS.md) |
-| Ethics & legal guardrails (OSINT ethics, GDPR, CCPA, NIST) | *to be added* |
+| Legal, ethical & policy considerations (GDPR, CCPA, OSINT ethics, NIST 800-53/61) | [LEGAL_ETHICAL_AND_POLICY.md](./LEGAL_ETHICAL_AND_POLICY.md) |
 | Strategic analysis & threat modelling (NIST 800-30, ACH) | *to be added* |
 | Threat research, correlation, infrastructure mapping (OSINT, malware analysis, behavioural fingerprinting) | *to be added* |
 | Reporting & communication | See [Ransomware Reporting Reference](#ransomware-reporting-reference) below |
@@ -68,7 +70,7 @@ Most analysts operate at indicator collection or structured analysis. Strategic 
 | Multidimensional intrusion analysis | Diamond Model |
 | Attack lifecycle tracking | Cyber Kill Chain |
 | Stakeholder-ready outputs | Reporting templates, modern reporting tools |
-| Ethical & legal guardrails | GDPR, NIST 800-53 |
+| Ethical & legal guardrails | GDPR, CCPA, NIST 800-53, NIST 800-61 |
 
 For framework comparison and the Diamond Model in detail, see [THREAT_MODELLING_FRAMEWORKS.md](./THREAT_MODELLING_FRAMEWORKS.md).
 

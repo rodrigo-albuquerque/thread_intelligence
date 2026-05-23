@@ -12,7 +12,9 @@ flowchart TD
     S2[Intelligence Collection<br/>&amp; Infrastructure]
     S3[Structured Analytical<br/>Techniques]
     S4[Data Analysis<br/>&amp; Validation]
-    S5[Reporting &amp;<br/>Communication]
+    S5[Attribution]
+    S6[Intelligence Confidence<br/>&amp; Enterprise Risk]
+    S7[Reporting &amp;<br/>Communication]
 
     A1[Threat actor landscape]
     A2[Threat modelling frameworks]
@@ -22,6 +24,13 @@ flowchart TD
     C2[Red Teaming]
     C3[Scenario Modelling]
     D1[Data Enrichment<br/>&amp; Validation]
+    E1[Attribution frameworks]
+    E2[Attribution challenges]
+    E3[Attribution case studies]
+    F1[Confidence language]
+    F2[Threat modelling for<br/>enterprise risk]
+    F3[Threat model design<br/>NIST 800-30 / STRIDE]
+    G1[Board reporting]
 
     ROOT --> S1 --> A1
     S1 --> A2
@@ -31,7 +40,13 @@ flowchart TD
     S3 --> C2
     S3 --> C3
     ROOT --> S4 --> D1
-    ROOT --> S5
+    ROOT --> S5 --> E1
+    S5 --> E2
+    S5 --> E3
+    ROOT --> S6 --> F1
+    S6 --> F2
+    S6 --> F3
+    ROOT --> S7 --> G1
 ```
 
 ### Introduction to Threat Intelligence
@@ -55,11 +70,25 @@ flowchart TD
 
 - [Data Enrichment and Validation (cross-referencing, TIPs, threat feeds, STIX/TAXII)](../04_Data_Analysis_and_Validation/09_DATA_ENRICHMENT_AND_VALIDATION.md)
 
+### Attribution
+
+- [Attribution Frameworks (Diamond Model, Pyramid of Pain, Kill Chain + ATT&CK)](../05_Attribution/10_ATTRIBUTION_FRAMEWORKS.md)
+- [Attribution Challenges (false flags, biases, conflicting evidence, geopolitics)](../05_Attribution/11_ATTRIBUTION_CHALLENGES.md)
+- [Attribution Case Studies (APT28/DNC, NotPetya, Sony/Lazarus)](../05_Attribution/12_ATTRIBUTION_CASE_STUDIES.md)
+
+### Intelligence Confidence & Enterprise Risk Modelling
+
+- [Intelligence Confidence Language (Sherman–Kent scale, sourcing, calibrated language)](../06_Intelligence_Confidence_and_Enterprise_Risk_Modelling/13_INTELLIGENCE_CONFIDENCE_LANGUAGE.md)
+- [Threat Modelling for Enterprise Risk (STRIDE, ATT&CK, PASTA selection)](../06_Intelligence_Confidence_and_Enterprise_Risk_Modelling/14_THREAT_MODELLING_FOR_ENTERPRISE_RISK.md)
+- [Threat Model Design — NIST 800-30 and STRIDE](../06_Intelligence_Confidence_and_Enterprise_Risk_Modelling/15_THREAT_MODEL_DESIGN_NIST_AND_STRIDE.md)
+
+### Reporting & Communication
+
+- [Delivering Intelligence Reports to the Board](../07_Reporting_and_Communication/16_DELIVERING_INTELLIGENCE_REPORTS_TO_THE_BOARD.md)
+- See also: [Ransomware Reporting Reference](#ransomware-reporting-reference) below
+
 ### To Be Added
 
-- Threat infrastructure analysis & malware/campaign correlation
-- Attribution & profiling deep dive
-- Reporting & communication — currently see [Ransomware Reporting Reference](#ransomware-reporting-reference) below
 - End-to-end campaign analysis
 
 ---
@@ -95,14 +124,17 @@ Most analysts operate at indicator collection or structured analysis. Strategic 
 | Structured analysis | MITRE ATT&CK, ACH (Analysis of Competing Hypotheses) |
 | Multidimensional intrusion analysis | Diamond Model |
 | Attack lifecycle tracking | Cyber Kill Chain |
+| Attribution prioritisation | Pyramid of Pain |
+| TTP mapping & visualisation | Malpedia, ATT&CK Navigator |
 | Threat intel aggregation (TIPs) | ThreatConnect, Anomali ThreatStream, MISP, Recorded Future |
 | Threat feeds | CISA KEV, Abuse.ch (ThreatFox, URLhaus), CrowdStrike, Cisco Talos |
 | Intel exchange standards | STIX, TAXII |
+| Threat-modelling tools | Microsoft Threat Modeling Tool, ThreatSpec |
 | Confidence communication | Sherman–Kent Confidence Scale |
 | Stakeholder-ready outputs | Reporting templates, modern reporting tools |
-| Ethical & legal guardrails | GDPR, CCPA, NIST 800-53, NIST 800-61 |
+| Ethical & legal guardrails | GDPR, CCPA, NIST 800-53, NIST 800-61, NIST 800-30 |
 
-For framework comparison and the Diamond Model in detail, see [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md). For the OSINT/HUMINT/SIGINT collection toolkit in context, see [04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md](../02_Intelligence_Collection_and_Infrastructure/04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md). For TIPs, feeds, and STIX/TAXII in context, see [09_DATA_ENRICHMENT_AND_VALIDATION.md](../04_Data_Analysis_and_Validation/09_DATA_ENRICHMENT_AND_VALIDATION.md).
+For framework comparison and the Diamond Model in detail, see [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md). For the OSINT/HUMINT/SIGINT collection toolkit in context, see [04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md](../02_Intelligence_Collection_and_Infrastructure/04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md). For TIPs, feeds, and STIX/TAXII in context, see [09_DATA_ENRICHMENT_AND_VALIDATION.md](../04_Data_Analysis_and_Validation/09_DATA_ENRICHMENT_AND_VALIDATION.md). For attribution-specific tooling and frameworks (Pyramid of Pain, ATT&CK Navigator, Malpedia), see [10_ATTRIBUTION_FRAMEWORKS.md](../05_Attribution/10_ATTRIBUTION_FRAMEWORKS.md).
 
 ---
 

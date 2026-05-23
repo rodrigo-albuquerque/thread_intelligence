@@ -8,6 +8,20 @@ For attribution context see [Attribution Challenges](../05_Attribution/11_ATTRIB
 
 Originally developed by the CIA. Assigns qualitative language to estimated probability ranges.
 
+```mermaid
+flowchart LR
+    R[Remote<br/><10%]
+    U[Unlikely<br/>~25%]
+    E[Even chance<br/>~50%]
+    P[Probable<br/>~75%]
+    A[Almost certain<br/>90–99%]
+
+    R --> U --> E --> P --> A
+
+    style R fill:#fde8e8,stroke:#c00
+    style A fill:#e8f5e9,stroke:#2a7
+```
+
 | Term | Estimated likelihood |
 |------|----------------------|
 | **Almost certain** | 90–99% |

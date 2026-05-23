@@ -68,6 +68,21 @@ The higher the rung, the harder it is for the adversary to change without signif
 
 Use the [Cyber Kill Chain](../01_Introduction_to_Threat_Intelligence/02_THREAT_MODELLING_FRAMEWORKS.md#cyber-kill-chain) for stage-based tracking and [MITRE ATT&CK](../01_Introduction_to_Threat_Intelligence/02_THREAT_MODELLING_FRAMEWORKS.md#mitre-attck) to map specific behaviours. Combined, they correlate campaign phases with known actor playbooks.
 
+```mermaid
+flowchart LR
+    KC[Cyber Kill Chain<br/><i>WHERE in the<br/>attack lifecycle</i>]
+    ATT[MITRE ATT&amp;CK<br/><i>HOW each step<br/>is performed</i>]
+    X[Campaign phase<br/>correlation]
+    Y[Match against known<br/>actor playbooks]
+
+    KC --> X
+    ATT --> X
+    X --> Y
+
+    style X fill:#e3f2fd,stroke:#1565c0
+    style Y fill:#e8f5e9,stroke:#2a7
+```
+
 ## 3. Analytical Correlation and Actor Profiling
 
 Once evidence and tactics are mapped, profile the actor. Triangulate from multiple angles:

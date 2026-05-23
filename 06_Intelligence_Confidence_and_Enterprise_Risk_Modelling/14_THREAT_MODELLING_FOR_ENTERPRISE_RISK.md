@@ -64,6 +64,22 @@ Detail: [PASTA](../01_Introduction_to_Threat_Intelligence/02_THREAT_MODELLING_FR
 
 ## Choosing the Right Model
 
+```mermaid
+flowchart TD
+    Q{What's the<br/>primary goal?}
+    Q -->|Secure software design| S[STRIDE]
+    Q -->|Threat detection &amp;<br/>response| AT[MITRE ATT&amp;CK]
+    Q -->|Business risk &amp; strategy<br/>communication| PA[PASTA]
+
+    S --> SD[Component-level threat<br/>enumeration during design]
+    AT --> AD[Detection coverage,<br/>actor playbook alignment]
+    PA --> PD[Board / CISO /<br/>legal communication]
+
+    style S fill:#fff3cd,stroke:#b8860b
+    style AT fill:#e3f2fd,stroke:#1565c0
+    style PA fill:#e8f5e9,stroke:#2a7
+```
+
 | Use case | Best fit |
 |----------|----------|
 | Secure software design | **STRIDE** |

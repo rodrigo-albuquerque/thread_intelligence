@@ -10,21 +10,27 @@ flowchart TD
 
     S1[Introduction to<br/>Threat Intelligence]
     S2[Intelligence Collection<br/>&amp; Infrastructure]
-    S3[Strategic Analysis,<br/>Attribution &amp;<br/>Threat Modelling]
-    S4[Threat Research,<br/>Correlation &amp;<br/>Infrastructure Mapping]
+    S3[Structured Analytical<br/>Techniques]
+    S4[Data Analysis<br/>&amp; Validation]
     S5[Reporting &amp;<br/>Communication]
 
     A1[Threat actor landscape]
     A2[Threat modelling frameworks]
     A3[Legal, ethical &amp; policy]
     B1[Intelligence collection<br/>methodologies]
+    C1[ACH]
+    C2[Red Teaming]
+    C3[Scenario Modelling]
+    D1[Data Enrichment<br/>&amp; Validation]
 
     ROOT --> S1 --> A1
     S1 --> A2
     S1 --> A3
     ROOT --> S2 --> B1
-    ROOT --> S3
-    ROOT --> S4
+    ROOT --> S3 --> C1
+    S3 --> C2
+    S3 --> C3
+    ROOT --> S4 --> D1
     ROOT --> S5
 ```
 
@@ -38,10 +44,21 @@ flowchart TD
 
 - [Intelligence collection methodologies (OSINT, HUMINT, SIGINT, deep & dark web)](../02_Intelligence_Collection_and_Infrastructure/04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md)
 
+### Structured Analytical Techniques
+
+- [Section overview](../03_Structured_Analytical_Techniques/05_OVERVIEW.md)
+- [Analysis of Competing Hypotheses (ACH)](../03_Structured_Analytical_Techniques/06_ANALYSIS_OF_COMPETING_HYPOTHESES.md)
+- [Red Teaming](../03_Structured_Analytical_Techniques/07_RED_TEAMING.md)
+- [Scenario Modelling](../03_Structured_Analytical_Techniques/08_SCENARIO_MODELLING.md)
+
+### Data Analysis & Validation
+
+- [Data Enrichment and Validation (cross-referencing, TIPs, threat feeds, STIX/TAXII)](../04_Data_Analysis_and_Validation/09_DATA_ENRICHMENT_AND_VALIDATION.md)
+
 ### To Be Added
 
-- Strategic analysis & threat modelling (NIST 800-30, ACH)
-- Threat research, correlation, infrastructure mapping (malware analysis, behavioural fingerprinting)
+- Threat infrastructure analysis & malware/campaign correlation
+- Attribution & profiling deep dive
 - Reporting & communication — currently see [Ransomware Reporting Reference](#ransomware-reporting-reference) below
 - End-to-end campaign analysis
 
@@ -78,10 +95,14 @@ Most analysts operate at indicator collection or structured analysis. Strategic 
 | Structured analysis | MITRE ATT&CK, ACH (Analysis of Competing Hypotheses) |
 | Multidimensional intrusion analysis | Diamond Model |
 | Attack lifecycle tracking | Cyber Kill Chain |
+| Threat intel aggregation (TIPs) | ThreatConnect, Anomali ThreatStream, MISP, Recorded Future |
+| Threat feeds | CISA KEV, Abuse.ch (ThreatFox, URLhaus), CrowdStrike, Cisco Talos |
+| Intel exchange standards | STIX, TAXII |
+| Confidence communication | Sherman–Kent Confidence Scale |
 | Stakeholder-ready outputs | Reporting templates, modern reporting tools |
 | Ethical & legal guardrails | GDPR, CCPA, NIST 800-53, NIST 800-61 |
 
-For framework comparison and the Diamond Model in detail, see [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md). For the OSINT/HUMINT/SIGINT collection toolkit in context, see [04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md](../02_Intelligence_Collection_and_Infrastructure/04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md).
+For framework comparison and the Diamond Model in detail, see [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md). For the OSINT/HUMINT/SIGINT collection toolkit in context, see [04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md](../02_Intelligence_Collection_and_Infrastructure/04_INTELLIGENCE_COLLECTION_METHODOLOGIES.md). For TIPs, feeds, and STIX/TAXII in context, see [09_DATA_ENRICHMENT_AND_VALIDATION.md](../04_Data_Analysis_and_Validation/09_DATA_ENRICHMENT_AND_VALIDATION.md).
 
 ---
 

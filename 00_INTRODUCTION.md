@@ -29,9 +29,9 @@ flowchart TD
 
 | Topic | Reference |
 |-------|-----------|
-| Threat actor categories, motivations, attribution, confidence levels | [THREAT_ACTOR_LANDSCAPE.md](./THREAT_ACTOR_LANDSCAPE.md) |
-| Threat modelling frameworks (MITRE ATT&CK, Diamond, Cyber Kill Chain, STRIDE, PASTA) | [THREAT_MODELLING_FRAMEWORKS.md](./THREAT_MODELLING_FRAMEWORKS.md) |
-| Legal, ethical & policy considerations (GDPR, CCPA, OSINT ethics, NIST 800-53/61) | [LEGAL_ETHICAL_AND_POLICY.md](./LEGAL_ETHICAL_AND_POLICY.md) |
+| Threat actor categories, motivations, attribution, confidence levels | [01_THREAT_ACTOR_LANDSCAPE.md](./01_THREAT_ACTOR_LANDSCAPE.md) |
+| Threat modelling frameworks (MITRE ATT&CK, Diamond, Cyber Kill Chain, STRIDE, PASTA) | [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md) |
+| Legal, ethical & policy considerations (GDPR, CCPA, OSINT ethics, NIST 800-53/61) | [03_LEGAL_ETHICAL_AND_POLICY.md](./03_LEGAL_ETHICAL_AND_POLICY.md) |
 | Strategic analysis & threat modelling (NIST 800-30, ACH) | *to be added* |
 | Threat research, correlation, infrastructure mapping (OSINT, malware analysis, behavioural fingerprinting) | *to be added* |
 | Reporting & communication | See [Ransomware Reporting Reference](#ransomware-reporting-reference) below |
@@ -72,7 +72,7 @@ Most analysts operate at indicator collection or structured analysis. Strategic 
 | Stakeholder-ready outputs | Reporting templates, modern reporting tools |
 | Ethical & legal guardrails | GDPR, CCPA, NIST 800-53, NIST 800-61 |
 
-For framework comparison and the Diamond Model in detail, see [THREAT_MODELLING_FRAMEWORKS.md](./THREAT_MODELLING_FRAMEWORKS.md).
+For framework comparison and the Diamond Model in detail, see [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md).
 
 ---
 
@@ -162,5 +162,5 @@ flowchart TD
 
 ## See Also
 
-- [Threat actor types and attribution](./THREAT_ACTOR_LANDSCAPE.md) — categories of actors and how attribution works.
-- [Threat modelling frameworks](./THREAT_MODELLING_FRAMEWORKS.md) — MITRE ATT&CK, Diamond Model, Cyber Kill Chain, STRIDE, PASTA.
+- [Threat actor types and attribution](./01_THREAT_ACTOR_LANDSCAPE.md) — categories of actors and how attribution works.
+- [Threat modelling frameworks](./02_THREAT_MODELLING_FRAMEWORKS.md) — MITRE ATT&CK, Diamond Model, Cyber Kill Chain, STRIDE, PASTA.

@@ -4,7 +4,7 @@ Reference for the legal frameworks, ethical boundaries, and policy controls that
 
 > Just because you *can* collect data doesn't mean you *should*. Crossing legal or ethical lines isn't a professional misstep — it can lead to lawsuits, reputational damage, or worse.
 
-For navigation see [COURSE_INTRODUCTION.md](./COURSE_INTRODUCTION.md).
+For navigation see [00_INTRODUCTION.md](./00_INTRODUCTION.md).
 
 ## At a Glance
 
@@ -167,6 +167,6 @@ These frameworks establish boundaries, build defensible workflows, and protect s
 
 ## See Also
 
-- [COURSE_INTRODUCTION.md](./COURSE_INTRODUCTION.md) — top-level reference index.
-- [THREAT_ACTOR_LANDSCAPE.md](./THREAT_ACTOR_LANDSCAPE.md) — actor categories and attribution.
-- [THREAT_MODELLING_FRAMEWORKS.md](./THREAT_MODELLING_FRAMEWORKS.md) — analytical frameworks.
+- [00_INTRODUCTION.md](./00_INTRODUCTION.md) — top-level reference index.
+- [01_THREAT_ACTOR_LANDSCAPE.md](./01_THREAT_ACTOR_LANDSCAPE.md) — actor categories and attribution.
+- [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md) — analytical frameworks.

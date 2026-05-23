@@ -2,7 +2,7 @@
 
 Reference for categorising threat actors, understanding their motivations and capabilities, and attributing observed activity.
 
-For modelling adversary behaviour see [THREAT_MODELLING_FRAMEWORKS.md](./THREAT_MODELLING_FRAMEWORKS.md). For navigation see [COURSE_INTRODUCTION.md](./COURSE_INTRODUCTION.md).
+For modelling adversary behaviour see [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md). For navigation see [00_INTRODUCTION.md](./00_INTRODUCTION.md).
 
 ## The Four Main Threat Actor Types
 
@@ -61,7 +61,7 @@ flowchart TD
 
 ## Confidence Levels
 
-Attribution is rarely 100% certain. Frameworks like the [Diamond Model](./THREAT_MODELLING_FRAMEWORKS.md#diamond-model) and [MITRE ATT&CK](./THREAT_MODELLING_FRAMEWORKS.md#mitre-attck) are used to evaluate signals; conclusions are qualified with a confidence level.
+Attribution is rarely 100% certain. Frameworks like the [Diamond Model](./02_THREAT_MODELLING_FRAMEWORKS.md#diamond-model) and [MITRE ATT&CK](./02_THREAT_MODELLING_FRAMEWORKS.md#mitre-attck) are used to evaluate signals; conclusions are qualified with a confidence level.
 
 ```
    CONFIDENCE   │  WHEN TO USE IT
@@ -85,5 +85,5 @@ Attribution is rarely 100% certain. Frameworks like the [Diamond Model](./THREAT
 
 ## See Also
 
-- [THREAT_MODELLING_FRAMEWORKS.md](./THREAT_MODELLING_FRAMEWORKS.md) — frameworks used to analyse adversary behaviour.
-- [COURSE_INTRODUCTION.md](./COURSE_INTRODUCTION.md) — top-level reference index.
+- [02_THREAT_MODELLING_FRAMEWORKS.md](./02_THREAT_MODELLING_FRAMEWORKS.md) — frameworks used to analyse adversary behaviour.
+- [00_INTRODUCTION.md](./00_INTRODUCTION.md) — top-level reference index.

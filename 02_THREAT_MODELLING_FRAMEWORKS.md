@@ -2,7 +2,7 @@
 
 Reference for the major frameworks used to analyse adversary behaviour and security risk. Each framework offers a different lens; selection depends on the analytical goal and audience.
 
-For threat actor categorisation see [THREAT_ACTOR_LANDSCAPE.md](./THREAT_ACTOR_LANDSCAPE.md). For navigation see [COURSE_INTRODUCTION.md](./COURSE_INTRODUCTION.md).
+For threat actor categorisation see [01_THREAT_ACTOR_LANDSCAPE.md](./01_THREAT_ACTOR_LANDSCAPE.md). For navigation see [00_INTRODUCTION.md](./00_INTRODUCTION.md).
 
 ## At a Glance
 
@@ -169,5 +169,5 @@ Frameworks are complementary. A CTI team may use ATT&CK and the Diamond Model in
 
 ## See Also
 
-- [THREAT_ACTOR_LANDSCAPE.md](./THREAT_ACTOR_LANDSCAPE.md) — actor categories, motivations, and attribution.
-- [COURSE_INTRODUCTION.md](./COURSE_INTRODUCTION.md) — top-level reference index.
+- [01_THREAT_ACTOR_LANDSCAPE.md](./01_THREAT_ACTOR_LANDSCAPE.md) — actor categories, motivations, and attribution.
+- [00_INTRODUCTION.md](./00_INTRODUCTION.md) — top-level reference index.
